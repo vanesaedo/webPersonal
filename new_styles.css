@@ -41,7 +41,10 @@ a:hover {
     display:flex;
     justify-content:space-between;
 }
-p {
+.div > a{
+    text-align: end;
+}
+div {
     text-align: justify;
     width:50%;
     margin: 40px;
