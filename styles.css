@@ -1,6 +1,6 @@
-* {
+/** {
     border: rgb(255, 0, 0) 1px solid;
-}
+}*/
 
 :root {
 
@@ -8,32 +8,82 @@
 }
 
 body {
-    margin: 0%;
-    padding: 0%;
+    display: flex;
+    /*color:red;*/
+    justify-content: center;
+    background-color: black;
+
 }
 
 header {
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
-    position:sticky;
-    position: -webkit-sticky; /* Safari */
-}
-
-nav {
-    height: 60px;
-    display: flex;
-    justify-content: left;
+    flex-wrap: wrap;
    
 }
 
+
+.mainIndex{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('assets/home.png');
+    mask-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    
+    
+
+} 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerBiography {
+    display:flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.navBiography {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 40px;
+    height: 100vh;
+}
+
+.mainBiography {
+    background-image: url(assets/foto_biography.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+    color:whitesmoke;
+    padding: 40px;
+   
+}
+.sectionBiography{
+    height: 90vh;
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    
+}
 a {
     text-decoration: none;
-    color:blue;
-    padding: 20px;
-    font-size: 1.2rem;
-
+    padding: 20px 32px;
+    font-size: 1.1rem;
+    color:red;
 }
 
 a:hover {
@@ -44,7 +94,7 @@ a:hover {
 
 p {
     line-height: 24px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .sectionVideos {
@@ -75,25 +125,8 @@ p {
     padding:40px;
 }
 
-.welcome {
-    display: flex;
-    height: 90vh;
-    width: 100%;
-    color:white;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(21, 37, 130);
 
-}
 
-.mainBiography {
-    background-image: url(assets/foto_biography.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    color:whitesmoke;
-   
-}
+
 
 
